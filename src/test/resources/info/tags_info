@@ -1,0 +1,4 @@
+@regression -> used for regression scenarios
+@positive -> used for positive scenarios
+@negative -> used for negative scenarios
+@sanity -> used for sanity scenarios

@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Suite">
+              <span class="suite-name border-failed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Suite">
+                    <span>D:\Cucumber_API_POC\test-automation-framework\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Suite">
+                    <span>1 group</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">18 methods, 1 failed,   17 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="runner.TestRunner" hash-for-method="runScenario(&quot;Validate Get all exchange rates with incorrect url&quot;, &quot;Optional[Foreign exchange rates with currency...)">runScenario("Validate Get all exchange rates with incorrect url", "Optional[Foreign exchange rates with currency...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="runner.TestRunner" hash-for-method="runScenario(&quot;Get all exchange rates against INR&quot;, &quot;Optional[Foreign exchange rates with currency conversion for ...)">runScenario("Get all exchange rates against INR", "Optional[Foreign exchange rates with currency conversion for ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="runner.TestRunner" hash-for-method="runScenario(&quot;Get all exchange rates for sunday with date &quot;2021-03-21&quot;&quot;, &quot;Optional[Foreign exchange rates with cu...)">runScenario("Get all exchange rates for sunday with date "2021-03-21"", "Optional[Foreign exchange rates with cu...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="runner.TestRunner" hash-for-method="runScenario(&quot;Get exchange rate for US against EUR&quot;, &quot;Optional[Foreign exchange rates with currency conversion fo...)">runScenario("Get exchange rate for US against EUR", "Optional[Foreign exchange rates with currency conversion fo...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="runner.TestRunner" hash-for-method="runScenario(&quot;Get exchange rate for 123 against USD&quot;, &quot;Optional[Foreign exchange rates with currency conversion f...)">runScenario("Get exchange rate for 123 against USD", "Optional[Foreign exchange rates with currency conversion f...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="runner.TestRunner" hash-for-method="runScenario(&quot;Get all exchange rates against TYT&quot;, &quot;Optional[Foreign exchange rates with currency conversion for ...)">runScenario("Get all exchange rates against TYT", "Optional[Foreign exchange rates with currency conversion for ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="runner.TestRunner" hash-for-method="runScenario(&quot;Get all exchange rates against CNY for &quot;2021-03-23&quot;&quot;, &quot;Optional[Foreign exchange rates with currenc...)">runScenario("Get all exchange rates against CNY for "2021-03-23"", "Optional[Foreign exchange rates with currenc...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="runner.TestRunner" hash-for-method="runScenario(&quot;Get exchange rate for GBP against USD for &quot;2021-03-23&quot;&quot;, &quot;Optional[Foreign exchange rates with curr...)">runScenario("Get exchange rate for GBP against USD for "2021-03-23"", "Optional[Foreign exchange rates with curr...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="runner.TestRunner" hash-for-method="runScenario(&quot;Get all exchange rates for saturday with date &quot;2021-03-20&quot;&quot;, &quot;Optional[Foreign exchange rates with ...)">runScenario("Get all exchange rates for saturday with date "2021-03-20"", "Optional[Foreign exchange rates with ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="runner.TestRunner" hash-for-method="runScenario(&quot;Get all exchange rates for latest date&quot;, &quot;Optional[Foreign exchange rates with currency conversion ...)">runScenario("Get all exchange rates for latest date", "Optional[Foreign exchange rates with currency conversion ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="runner.TestRunner" hash-for-method="runScenario(&quot;Get all exchange rates for latest and future date&quot;, &quot;Optional[Foreign exchange rates with currency ...)">runScenario("Get all exchange rates for latest and future date", "Optional[Foreign exchange rates with currency ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="runner.TestRunner" hash-for-method="runScenario(&quot;Get all exchange rates against ZXZ for &quot;2021-03-23&quot;&quot;, &quot;Optional[Foreign exchange rates with currenc...)">runScenario("Get all exchange rates against ZXZ for "2021-03-23"", "Optional[Foreign exchange rates with currenc...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="runner.TestRunner" hash-for-method="runScenario(&quot;Get all exchange rates for &quot;2021-03-22&quot;&quot;, &quot;Optional[Foreign exchange rates with currency conversion...)">runScenario("Get all exchange rates for "2021-03-22"", "Optional[Foreign exchange rates with currency conversion...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="runner.TestRunner" hash-for-method="runScenario(&quot;Get exchange rate for PPP against USD for &quot;2021-03-23&quot;&quot;, &quot;Optional[Foreign exchange rates with curr...)">runScenario("Get exchange rate for PPP against USD for "2021-03-23"", "Optional[Foreign exchange rates with curr...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="runner.TestRunner" hash-for-method="runScenario(&quot;Get exchange rate for SSS against EUR for &quot;2021-03-23&quot;&quot;, &quot;Optional[Foreign exchange rates with curr...)">runScenario("Get exchange rate for SSS against EUR for "2021-03-23"", "Optional[Foreign exchange rates with curr...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="runner.TestRunner" hash-for-method="runScenario(&quot;Get exchange rate for USD against EUR&quot;, &quot;Optional[Foreign exchange rates with currency conversion f...)">runScenario("Get exchange rate for USD against EUR", "Optional[Foreign exchange rates with currency conversion f...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="runner.TestRunner" hash-for-method="runScenario(&quot;Get exchange rate for USD against EUR for &quot;2021-03-23&quot;&quot;, &quot;Optional[Foreign exchange rates with curr...)">runScenario("Get exchange rate for USD against EUR for "2021-03-23"", "Optional[Foreign exchange rates with curr...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="runner.TestRunner" hash-for-method="runScenario(&quot;Get exchange rate for BRL against INR&quot;, &quot;Optional[Foreign exchange rates with currency conversion f...)">runScenario("Get exchange rate for BRL against INR", "Optional[Foreign exchange rates with currency conversion f...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">runner.TestRunner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate Get all exchange rates with incorrect url&quot;, &quot;Optional[Foreign exchange rates with currency...)">
+                  </a> <!-- runScenario("Validate Get all exchange rates with incorrect url", "Optional[Foreign exchange rates with currency...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate Get all exchange rates with incorrect url", "Optional[Foreign exchange rates with currency conversion for latest data]")</span>
+                  <div class="stack-trace">java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:75)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:476)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:218)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:200)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:162)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:394)
+	at java.net.Socket.connect(Socket.java:606)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:326)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:610)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:445)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.apache.http.client.HttpClient$execute$17.call(Unknown Source)
+	at io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder.doRequest(RequestSpecificationImpl.groovy:2055)
+	at io.restassured.internal.http.HTTPBuilder.doRequest(HTTPBuilder.java:495)
+	at io.restassured.internal.http.HTTPBuilder.request(HTTPBuilder.java:452)
+	at io.restassured.internal.http.HTTPBuilder$request$27.call(Unknown Source)
+	at io.restassured.internal.RequestSpecificationImpl.sendHttpRequest(RequestSpecificationImpl.groovy:1451)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1035)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:819)
+	at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)
+	at io.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1200)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1035)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:819)
+	at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:166)
+	at io.restassured.internal.filter.SendRequestFilter.filter(SendRequestFilter.groovy:30)
+	at io.restassured.filter.Filter$filter$9.call(Unknown Source)
+	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at io.restassured.filter.time.TimingFilter.filter(TimingFilter.java:56)
+	at io.restassured.filter.Filter$filter$3.call(Unknown Source)
+	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at io.restassured.filter.FilterContext$next$6.call(Unknown Source)
+	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1655)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1035)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:819)
+	at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
+	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1661)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1035)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:819)
+	at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
+	at io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy:171)
+	at io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy)
+	at step_definitions.Get_ExchangeRates.lambda$4(Get_ExchangeRates.java:69)
+	at ✽.I hit incorrect URL &quot;https://api.ratesapi.io/api/&quot; with date as &quot;&quot;(classpath:features/ExchangesRates_LatestData.feature:42)
+... Removed 20 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">runner.TestRunner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Get all exchange rates against INR&quot;, &quot;Optional[Foreign exchange rates with currency conversion for ...)">
+                  </a> <!-- runScenario("Get all exchange rates against INR", "Optional[Foreign exchange rates with currency conversion for ...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Get all exchange rates against INR", "Optional[Foreign exchange rates with currency conversion for latest data]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Get all exchange rates for sunday with date &quot;2021-03-21&quot;&quot;, &quot;Optional[Foreign exchange rates with cu...)">
+                  </a> <!-- runScenario("Get all exchange rates for sunday with date "2021-03-21"", "Optional[Foreign exchange rates with cu...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Get all exchange rates for sunday with date "2021-03-21"", "Optional[Foreign exchange rates with currency conversion for past data]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Get exchange rate for US against EUR&quot;, &quot;Optional[Foreign exchange rates with currency conversion fo...)">
+                  </a> <!-- runScenario("Get exchange rate for US against EUR", "Optional[Foreign exchange rates with currency conversion fo...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Get exchange rate for US against EUR", "Optional[Foreign exchange rates with currency conversion for latest data]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Get exchange rate for 123 against USD&quot;, &quot;Optional[Foreign exchange rates with currency conversion f...)">
+                  </a> <!-- runScenario("Get exchange rate for 123 against USD", "Optional[Foreign exchange rates with currency conversion f...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Get exchange rate for 123 against USD", "Optional[Foreign exchange rates with currency conversion for latest data]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Get all exchange rates against TYT&quot;, &quot;Optional[Foreign exchange rates with currency conversion for ...)">
+                  </a> <!-- runScenario("Get all exchange rates against TYT", "Optional[Foreign exchange rates with currency conversion for ...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Get all exchange rates against TYT", "Optional[Foreign exchange rates with currency conversion for latest data]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Get all exchange rates against CNY for &quot;2021-03-23&quot;&quot;, &quot;Optional[Foreign exchange rates with currenc...)">
+                  </a> <!-- runScenario("Get all exchange rates against CNY for "2021-03-23"", "Optional[Foreign exchange rates with currenc...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Get all exchange rates against CNY for "2021-03-23"", "Optional[Foreign exchange rates with currency conversion for past data]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Get exchange rate for GBP against USD for &quot;2021-03-23&quot;&quot;, &quot;Optional[Foreign exchange rates with curr...)">
+                  </a> <!-- runScenario("Get exchange rate for GBP against USD for "2021-03-23"", "Optional[Foreign exchange rates with curr...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Get exchange rate for GBP against USD for "2021-03-23"", "Optional[Foreign exchange rates with currency conversion for past data]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Get all exchange rates for saturday with date &quot;2021-03-20&quot;&quot;, &quot;Optional[Foreign exchange rates with ...)">
+                  </a> <!-- runScenario("Get all exchange rates for saturday with date "2021-03-20"", "Optional[Foreign exchange rates with ...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Get all exchange rates for saturday with date "2021-03-20"", "Optional[Foreign exchange rates with currency conversion for past data]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Get all exchange rates for latest date&quot;, &quot;Optional[Foreign exchange rates with currency conversion ...)">
+                  </a> <!-- runScenario("Get all exchange rates for latest date", "Optional[Foreign exchange rates with currency conversion ...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Get all exchange rates for latest date", "Optional[Foreign exchange rates with currency conversion for latest data]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Get all exchange rates for latest and future date&quot;, &quot;Optional[Foreign exchange rates with currency ...)">
+                  </a> <!-- runScenario("Get all exchange rates for latest and future date", "Optional[Foreign exchange rates with currency ...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Get all exchange rates for latest and future date", "Optional[Foreign exchange rates with currency conversion for latest data]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Get all exchange rates against ZXZ for &quot;2021-03-23&quot;&quot;, &quot;Optional[Foreign exchange rates with currenc...)">
+                  </a> <!-- runScenario("Get all exchange rates against ZXZ for "2021-03-23"", "Optional[Foreign exchange rates with currenc...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Get all exchange rates against ZXZ for "2021-03-23"", "Optional[Foreign exchange rates with currency conversion for past data]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Get all exchange rates for &quot;2021-03-22&quot;&quot;, &quot;Optional[Foreign exchange rates with currency conversion...)">
+                  </a> <!-- runScenario("Get all exchange rates for "2021-03-22"", "Optional[Foreign exchange rates with currency conversion...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Get all exchange rates for "2021-03-22"", "Optional[Foreign exchange rates with currency conversion for past data]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Get exchange rate for PPP against USD for &quot;2021-03-23&quot;&quot;, &quot;Optional[Foreign exchange rates with curr...)">
+                  </a> <!-- runScenario("Get exchange rate for PPP against USD for "2021-03-23"", "Optional[Foreign exchange rates with curr...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Get exchange rate for PPP against USD for "2021-03-23"", "Optional[Foreign exchange rates with currency conversion for past data]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Get exchange rate for SSS against EUR for &quot;2021-03-23&quot;&quot;, &quot;Optional[Foreign exchange rates with curr...)">
+                  </a> <!-- runScenario("Get exchange rate for SSS against EUR for "2021-03-23"", "Optional[Foreign exchange rates with curr...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Get exchange rate for SSS against EUR for "2021-03-23"", "Optional[Foreign exchange rates with currency conversion for past data]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Get exchange rate for USD against EUR&quot;, &quot;Optional[Foreign exchange rates with currency conversion f...)">
+                  </a> <!-- runScenario("Get exchange rate for USD against EUR", "Optional[Foreign exchange rates with currency conversion f...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Get exchange rate for USD against EUR", "Optional[Foreign exchange rates with currency conversion for latest data]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Get exchange rate for USD against EUR for &quot;2021-03-23&quot;&quot;, &quot;Optional[Foreign exchange rates with curr...)">
+                  </a> <!-- runScenario("Get exchange rate for USD against EUR for "2021-03-23"", "Optional[Foreign exchange rates with curr...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Get exchange rate for USD against EUR for "2021-03-23"", "Optional[Foreign exchange rates with currency conversion for past data]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Get exchange rate for BRL against INR&quot;, &quot;Optional[Foreign exchange rates with currency conversion f...)">
+                  </a> <!-- runScenario("Get exchange rate for BRL against INR", "Optional[Foreign exchange rates with currency conversion f...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Get exchange rate for BRL against INR", "Optional[Foreign exchange rates with currency conversion for latest data]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">D:\Cucumber_API_POC\test-automation-framework\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot;&gt;
+  &lt;test thread-count=&quot;1&quot; name=&quot;Runner&quot; parallel=&quot;methods&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;runner.TestRunner&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Runner --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Runner (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">cucumber</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">runScenario</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(18);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'runScenario')
+data.setCell(0, 2, 'runner.TestRunner')
+data.setCell(0, 3, 5383);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'runScenario')
+data.setCell(1, 2, 'runner.TestRunner')
+data.setCell(1, 3, 5383);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'runScenario')
+data.setCell(2, 2, 'runner.TestRunner')
+data.setCell(2, 3, 5383);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'runScenario')
+data.setCell(3, 2, 'runner.TestRunner')
+data.setCell(3, 3, 5382);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'runScenario')
+data.setCell(4, 2, 'runner.TestRunner')
+data.setCell(4, 3, 5382);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'runScenario')
+data.setCell(5, 2, 'runner.TestRunner')
+data.setCell(5, 3, 5382);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'runScenario')
+data.setCell(6, 2, 'runner.TestRunner')
+data.setCell(6, 3, 5379);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'runScenario')
+data.setCell(7, 2, 'runner.TestRunner')
+data.setCell(7, 3, 5288);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'runScenario')
+data.setCell(8, 2, 'runner.TestRunner')
+data.setCell(8, 3, 5288);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'runScenario')
+data.setCell(9, 2, 'runner.TestRunner')
+data.setCell(9, 3, 5288);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'runScenario')
+data.setCell(10, 2, 'runner.TestRunner')
+data.setCell(10, 3, 4101);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'runScenario')
+data.setCell(11, 2, 'runner.TestRunner')
+data.setCell(11, 3, 1827);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'runScenario')
+data.setCell(12, 2, 'runner.TestRunner')
+data.setCell(12, 3, 912);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'runScenario')
+data.setCell(13, 2, 'runner.TestRunner')
+data.setCell(13, 3, 906);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'runScenario')
+data.setCell(14, 2, 'runner.TestRunner')
+data.setCell(14, 3, 891);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'runScenario')
+data.setCell(15, 2, 'runner.TestRunner')
+data.setCell(15, 3, 888);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'runScenario')
+data.setCell(16, 2, 'runner.TestRunner')
+data.setCell(16, 3, 853);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'runScenario')
+data.setCell(17, 2, 'runner.TestRunner')
+data.setCell(17, 3, 620);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">runner.TestRunner</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpClass</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Get exchange rate for GBP against USD for "2021-03-23"", "Optional[Foreign exchange rates with curr...)</span>
+                <span class="method-start">954 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Get all exchange rates for sunday with date "2021-03-21"", "Optional[Foreign exchange rates with cu...)</span>
+                <span class="method-start">954 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Get all exchange rates for "2021-03-22"", "Optional[Foreign exchange rates with currency conversion...)</span>
+                <span class="method-start">954 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Get all exchange rates against CNY for "2021-03-23"", "Optional[Foreign exchange rates with currenc...)</span>
+                <span class="method-start">954 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Get exchange rate for PPP against USD for "2021-03-23"", "Optional[Foreign exchange rates with curr...)</span>
+                <span class="method-start">954 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Get exchange rate for USD against EUR for "2021-03-23"", "Optional[Foreign exchange rates with curr...)</span>
+                <span class="method-start">954 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Get exchange rate for SSS against EUR for "2021-03-23"", "Optional[Foreign exchange rates with curr...)</span>
+                <span class="method-start">954 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Get all exchange rates against ZXZ for "2021-03-23"", "Optional[Foreign exchange rates with currenc...)</span>
+                <span class="method-start">954 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Get all exchange rates for latest date", "Optional[Foreign exchange rates with currency conversion ...)</span>
+                <span class="method-start">954 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Get all exchange rates for saturday with date "2021-03-20"", "Optional[Foreign exchange rates with ...)</span>
+                <span class="method-start">957 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Get exchange rate for USD against EUR", "Optional[Foreign exchange rates with currency conversion f...)</span>
+                <span class="method-start">6245 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Get all exchange rates for latest and future date", "Optional[Foreign exchange rates with currency ...)</span>
+                <span class="method-start">6245 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Get all exchange rates against INR", "Optional[Foreign exchange rates with currency conversion for ...)</span>
+                <span class="method-start">6246 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Get exchange rate for BRL against INR", "Optional[Foreign exchange rates with currency conversion f...)</span>
+                <span class="method-start">6337 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Get exchange rate for US against EUR", "Optional[Foreign exchange rates with currency conversion fo...)</span>
+                <span class="method-start">6338 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Validate Get all exchange rates with incorrect url", "Optional[Foreign exchange rates with currency...)</span>
+                <span class="method-start">6338 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Get all exchange rates against TYT", "Optional[Foreign exchange rates with currency conversion for ...)</span>
+                <span class="method-start">6339 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Get exchange rate for 123 against USD", "Optional[Foreign exchange rates with currency conversion f...)</span>
+                <span class="method-start">6341 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownClass</span>
+                <span class="method-start">10442 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

@@ -1,0 +1,1634 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Extent</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@c43b89d03a7c43dae8bb8f0f078bad1997af6b3b/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.rawgit.com/extent-framework/extent-github-cdn/7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Grasshopper Report</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Mar 28, 2021 08:04:04 AM</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Mar 28, 2021 08:04:04 AM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Mar 28, 2021 08:04:14 AM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>1</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>1</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='50%'>
+<b>1</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='50%'><b>1</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='94%'><b>17</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='5%'><b>1</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='96%'><b>63</b> steps passed</small></div>
+<div>
+<small data-tooltip='1%'><b>1</b> steps failed,
+<b>1</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"Foreign exchange rates with currency conversion for past data":5.07,"Foreign exchange rates with currency conversion for latest data":9.147
+};
+</script>
+<div class="row">
+<div class="col-md-4 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>@positive</td>
+<td>11</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@negative</td>
+<td>6</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>85.714%</td>
+</tr>
+<tr>
+<td>@regression</td>
+<td>17</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>94.444%</td>
+</tr>
+<tr>
+<td>@sanity</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 1,
+failParent: 1,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 17,
+failChild: 1,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 63,
+failGrandChild: 1,
+warningGrandChild: 0,
+skipGrandChild: 1,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script><div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">@positive</a><a class="dropdown-item" href="#">@negative</a><a class="dropdown-item" href="#">@regression</a><a class="dropdown-item" href="#">@sanity</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Foreign exchange rates with currency conversion for past data</p>
+            <p class="text-sm">
+              <span>08:04:05 AM</span> / <span>00:00:05:070</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Foreign exchange rates with currency conversion for past data</h5>
+<span class='badge badge-success'>03.28.2021 08:04:05</span>
+<span class='badge badge-danger'>03.28.2021 08:04:10</span>
+<span class='badge badge-default'>00:00:05:070</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+</div>
+<div class="m-t-10 m-l-5"> This feature is for validating past foreign exchange rates with currency conversion
+Euro is default base value against which prices are returned.</div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Get exchange rate for PPP against USD for "2021-03-23"</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="step_definitions.Get_ExchangeRates.<init>(Get_ExchangeRates.java:28)">
+                <span>Given Rates API for Foreign Exchange rates</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="step_definitions.Get_ExchangeRates.<init>(Get_ExchangeRates.java:49)">
+                <span>When I hit URL with query parameters "base" as "USD" and "symbols" as "PPP" with date as "2021-03-23"</span>
+      <div> -->URL:: https://api.ratesapi.io/api/2021-03-23
+      </div>
+      <div> -->Query Parameters:: base=USD,symbols=symbols
+      </div>
+      <div> -->statusCode:: 400
+      </div>
+      <div> -->responseBody:: {"error":"Symbols 'PPP' are invalid for date 2021-03-23."}
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="step_definitions.Get_ExchangeRates.<init>(Get_ExchangeRates.java:74)">
+                <span>Then API returns the response with status code as 400</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="3"><span class="badge log pass-bg mr-2">Pass</span>Get all exchange rates for saturday with date "2021-03-20"</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="step_definitions.Get_ExchangeRates.<init>(Get_ExchangeRates.java:28)">
+                <span>Given Rates API for Foreign Exchange rates</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="step_definitions.Get_ExchangeRates.<init>(Get_ExchangeRates.java:33)">
+                <span>When I hit URL with date as "2021-03-21"</span>
+      <div> -->URL:: https://api.ratesapi.io/api/2021-03-21
+      </div>
+      <div> -->statusCode:: 200
+      </div>
+      <div> -->responseBody:: {"base":"EUR","rates":{"GBP":0.85763,"HKD":9.2352,"IDR":17128.99,"ILS":3.9213,"DKK":7.4364,"INR":86.2155,"CHF":1.1066,"MXN":24.16,"CZK":26.127,"SGD":1.597,"THB":36.672,"HRK":7.5758,"MYR":4.8842,"NOK":10.2018,"CNY":7.7413,"BGN":1.9558,"PHP":57.795,"SEK":10.1743,"PLN":4.62,"ZAR":17.5051,"CAD":1.4877,"ISK":151.4,"BRL":6.571,"RON":4.8853,"NZD":1.6598,"TRY":8.6354,"JPY":129.54,"RUB":88.075,"KRW":1344.69,"USD":1.1891,"HUF":367.94,"AUD":1.5365},"date":"2021-03-19"}
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="step_definitions.Get_ExchangeRates.<init>(Get_ExchangeRates.java:74)">
+                <span>Then API returns the response with status code as 200</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="step_definitions.Get_ExchangeRates.<init>(Get_ExchangeRates.java:82)">
+                <span>And All exchange rates are returned against base "EUR"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="4"><span class="badge log pass-bg mr-2">Pass</span>Get all exchange rates against ZXZ for "2021-03-23"</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="step_definitions.Get_ExchangeRates.<init>(Get_ExchangeRates.java:28)">
+                <span>Given Rates API for Foreign Exchange rates</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="step_definitions.Get_ExchangeRates.<init>(Get_ExchangeRates.java:40)">
+                <span>When I hit URL with query parameter "base" as "ZXZ" with date as "2021-03-23"</span>
+      <div> -->URL:: https://api.ratesapi.io/api/2021-03-23
+      </div>
+      <div> -->Query Parameters:: base=ZXZ
+      </div>
+      <div> -->statusCode:: 400
+      </div>
+      <div> -->responseBody:: {"error":"Base 'ZXZ' is not supported."}
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="step_definitions.Get_ExchangeRates.<init>(Get_ExchangeRates.java:74)">
+                <span>Then API returns the response with status code as 400</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="5"><span class="badge log pass-bg mr-2">Pass</span>Get all exchange rates for sunday with date "2021-03-21"</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="step_definitions.Get_ExchangeRates.<init>(Get_ExchangeRates.java:28)">
+                <span>Given Rates API for Foreign Exchange rates</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="step_definitions.Get_ExchangeRates.<init>(Get_ExchangeRates.java:33)">
+                <span>When I hit URL with date as "2021-03-21"</span>
+      <div> -->URL:: https://api.ratesapi.io/api/2021-03-21
+      </div>
+      <div> -->statusCode:: 200
+      </div>
+      <div> -->responseBody:: {"base":"EUR","rates":{"GBP":0.85763,"HKD":9.2352,"IDR":17128.99,"ILS":3.9213,"DKK":7.4364,"INR":86.2155,"CHF":1.1066,"MXN":24.16,"CZK":26.127,"SGD":1.597,"THB":36.672,"HRK":7.5758,"MYR":4.8842,"NOK":10.2018,"CNY":7.7413,"BGN":1.9558,"PHP":57.795,"SEK":10.1743,"PLN":4.62,"ZAR":17.5051,"CAD":1.4877,"ISK":151.4,"BRL":6.571,"RON":4.8853,"NZD":1.6598,"TRY":8.6354,"JPY":129.54,"RUB":88.075,"KRW":1344.69,"USD":1.1891,"HUF":367.94,"AUD":1.5365},"date":"2021-03-19"}
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="step_definitions.Get_ExchangeRates.<init>(Get_ExchangeRates.java:74)">
+                <span>Then API returns the response with status code as 200</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="step_definitions.Get_ExchangeRates.<init>(Get_ExchangeRates.java:82)">
+                <span>And All exchange rates are returned against base "EUR"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="7"><span class="badge log pass-bg mr-2">Pass</span>Get exchange rate for SSS against EUR for "2021-03-23"</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="step_definitions.Get_ExchangeRates.<init>(Get_ExchangeRates.java:28)">
+                <span>Given Rates API for Foreign Exchange rates</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="step_definitions.Get_ExchangeRates.<init>(Get_ExchangeRates.java:40)">
+                <span>When I hit URL with query parameter "symbols" as "SSS" with date as "2021-03-23"</span>
+      <div> -->URL:: https://api.ratesapi.io/api/2021-03-23
+      </div>
+      <div> -->Query Parameters:: symbols=SSS
+      </div>
+      <div> -->statusCode:: 400
+      </div>
+      <div> -->responseBody:: {"error":"Symbols 'SSS' are invalid for date 2021-03-23."}
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="step_definitions.Get_ExchangeRates.<init>(Get_ExchangeRates.java:74)">
+                <span>Then API returns the response with status code as 400</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="8"><span class="badge log pass-bg mr-2">Pass</span>Get exchange rate for USD against EUR for "2021-03-23"</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="step_definitions.Get_ExchangeRates.<init>(Get_ExchangeRates.java:28)">
+                <span>Given Rates API for Foreign Exchange rates</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="step_definitions.Get_ExchangeRates.<init>(Get_ExchangeRates.java:40)">
+                <span>When I hit URL with query parameter "symbols" as "USD" with date as "2021-03-23"</span>
+      <div> -->URL:: https://api.ratesapi.io/api/2021-03-23
+      </div>
+      <div> -->Query Parameters:: symbols=USD
+      </div>
+      <div> -->statusCode:: 200
+      </div>
+      <div> -->responseBody:: {"base":"EUR","rates":{"USD":1.1883},"date":"2021-03-23"}
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="step_definitions.Get_ExchangeRates.<init>(Get_ExchangeRates.java:74)">
+                <span>Then API returns the response with status code as 200</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="step_definitions.Get_ExchangeRates.<init>(Get_ExchangeRates.java:88)">
+                <span>And Response should contain rate for "USD" against base "EUR"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="9"><span class="badge log pass-bg mr-2">Pass</span>Get all exchange rates against CNY for "2021-03-23"</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="step_definitions.Get_ExchangeRates.<init>(Get_ExchangeRates.java:28)">
+                <span>Given Rates API for Foreign Exchange rates</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="step_definitions.Get_ExchangeRates.<init>(Get_ExchangeRates.java:40)">
+                <span>When I hit URL with query parameter "base" as "CNY" with date as "2021-03-23"</span>
+      <div> -->URL:: https://api.ratesapi.io/api/2021-03-23
+      </div>
+      <div> -->Query Parameters:: base=CNY
+      </div>
+      <div> -->statusCode:: 200
+      </div>
+      <div> -->responseBody:: {"base":"CNY","rates":{"GBP":0.1114144273,"HKD":1.1928858557,"IDR":2210.9659157005,"ILS":0.5053705068,"DKK":0.9611332997,"INR":11.1290989698,"CHF":0.1430325591,"MXN":3.1786937583,"CZK":3.3861982499,"SGD":0.2062248762,"THB":4.7590057777,"HRK":0.9791642432,"EUR":0.1292540747,"MYR":0.6331898613,"NOK":1.3155867489,"CNY":1.0,"BGN":0.2527951194,"PHP":7.4681711841,"PLN":0.5970374966,"ZAR":2.2725192912,"CAD":0.1930797368,"ISK":19.1683792832,"BRL":0.8474155648,"RON":0.6319619476,"NZD":0.2186720436,"TRY":1.210309305,"JPY":16.6724831,"RUB":11.6688122843,"KRW":173.5210102498,"USD":0.153592617,"AUD":0.2002274872,"HUF":47.372910931,"SEK":1.3159745111},"date":"2021-03-23"}
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="step_definitions.Get_ExchangeRates.<init>(Get_ExchangeRates.java:74)">
+                <span>Then API returns the response with status code as 200</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="step_definitions.Get_ExchangeRates.<init>(Get_ExchangeRates.java:82)">
+                <span>And All exchange rates are returned against base "CNY"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="12"><span class="badge log pass-bg mr-2">Pass</span>Get exchange rate for GBP against USD for "2021-03-23"</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="step_definitions.Get_ExchangeRates.<init>(Get_ExchangeRates.java:28)">
+                <span>Given Rates API for Foreign Exchange rates</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="step_definitions.Get_ExchangeRates.<init>(Get_ExchangeRates.java:49)">
+                <span>When I hit URL with query parameters "base" as "USD" and "symbols" as "GBP" with date as "2021-03-23"</span>
+      <div> -->URL:: https://api.ratesapi.io/api/2021-03-23
+      </div>
+      <div> -->Query Parameters:: base=USD,symbols=symbols
+      </div>
+      <div> -->statusCode:: 200
+      </div>
+      <div> -->responseBody:: {"base":"USD","rates":{"GBP":0.7253892115},"date":"2021-03-23"}
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="step_definitions.Get_ExchangeRates.<init>(Get_ExchangeRates.java:74)">
+                <span>Then API returns the response with status code as 200</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="step_definitions.Get_ExchangeRates.<init>(Get_ExchangeRates.java:88)">
+                <span>And Response should contain rate for "GBP" against base "USD"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="14"><span class="badge log pass-bg mr-2">Pass</span>Get all exchange rates for "2021-03-22"</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="step_definitions.Get_ExchangeRates.<init>(Get_ExchangeRates.java:28)">
+                <span>Given Rates API for Foreign Exchange rates</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="step_definitions.Get_ExchangeRates.<init>(Get_ExchangeRates.java:33)">
+                <span>When I hit URL with date as "2021-03-23"</span>
+      <div> -->URL:: https://api.ratesapi.io/api/2021-03-23
+      </div>
+      <div> -->statusCode:: 200
+      </div>
+      <div> -->responseBody:: {"base":"EUR","rates":{"GBP":0.86198,"HKD":9.229,"IDR":17105.58,"ILS":3.9099,"DKK":7.436,"INR":86.1025,"CHF":1.1066,"MXN":24.5926,"CZK":26.198,"SGD":1.5955,"THB":36.819,"HRK":7.5755,"MYR":4.8988,"NOK":10.1783,"CNY":7.7367,"BGN":1.9558,"PHP":57.779,"SEK":10.1813,"PLN":4.6191,"ZAR":17.5818,"CAD":1.4938,"ISK":148.3,"BRL":6.5562,"RON":4.8893,"NZD":1.6918,"TRY":9.3638,"JPY":128.99,"RUB":90.2781,"KRW":1342.48,"USD":1.1883,"HUF":366.51,"AUD":1.5491},"date":"2021-03-23"}
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="step_definitions.Get_ExchangeRates.<init>(Get_ExchangeRates.java:74)">
+                <span>Then API returns the response with status code as 200</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="step_definitions.Get_ExchangeRates.<init>(Get_ExchangeRates.java:82)">
+                <span>And All exchange rates are returned against base "EUR"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="10"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Foreign exchange rates with currency conversion for latest data</p>
+            <p class="text-sm">
+              <span>08:04:05 AM</span> / <span>00:00:09:147</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Foreign exchange rates with currency conversion for latest data</h5>
+<span class='badge badge-success'>03.28.2021 08:04:05</span>
+<span class='badge badge-danger'>03.28.2021 08:04:14</span>
+<span class='badge badge-default'>00:00:09:147</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=10</span>
+</div>
+<div class="m-t-10 m-l-5"> This feature is for validating latest foreign exchange rates with currency conversion
+Euro is default base value against which prices are returned.</div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="11"><span class="badge log pass-bg mr-2">Pass</span>Get all exchange rates for latest date</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="step_definitions.Get_ExchangeRates.<init>(Get_ExchangeRates.java:28)">
+                <span>Given Rates API for Foreign Exchange rates</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="step_definitions.Get_ExchangeRates.<init>(Get_ExchangeRates.java:33)">
+                <span>When I hit URL with date as "latest"</span>
+      <div> -->URL:: https://api.ratesapi.io/api/latest
+      </div>
+      <div> -->statusCode:: 200
+      </div>
+      <div> -->responseBody:: {"base":"EUR","rates":{"GBP":0.85503,"HKD":9.154,"IDR":16986.7,"ILS":3.9261,"DKK":7.4361,"INR":85.4845,"CHF":1.109,"MXN":24.2575,"CZK":26.081,"SGD":1.5865,"THB":36.654,"HRK":7.574,"MYR":4.8854,"NOK":10.1258,"CNY":7.7063,"BGN":1.9558,"PHP":57.132,"SEK":10.1905,"PLN":4.6493,"ZAR":17.6845,"CAD":1.4814,"ISK":149.8,"BRL":6.711,"RON":4.8878,"NZD":1.6863,"TRY":9.4523,"JPY":129.34,"RUB":89.5075,"KRW":1332.17,"USD":1.1782,"HUF":363.58,"AUD":1.5459},"date":"2021-03-26"}
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="step_definitions.Get_ExchangeRates.<init>(Get_ExchangeRates.java:74)">
+                <span>Then API returns the response with status code as 200</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="step_definitions.Get_ExchangeRates.<init>(Get_ExchangeRates.java:82)">
+                <span>And All exchange rates are returned against base "EUR"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="63"><span class="badge log pass-bg mr-2">Pass</span>Get exchange rate for USD against EUR</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="step_definitions.Get_ExchangeRates.<init>(Get_ExchangeRates.java:28)">
+                <span>Given Rates API for Foreign Exchange rates</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="step_definitions.Get_ExchangeRates.<init>(Get_ExchangeRates.java:40)">
+                <span>When I hit URL with query parameter "symbols" as "USD" with date as "latest"</span>
+      <div> -->URL:: https://api.ratesapi.io/api/latest
+      </div>
+      <div> -->Query Parameters:: symbols=USD
+      </div>
+      <div> -->statusCode:: 200
+      </div>
+      <div> -->responseBody:: {"base":"EUR","rates":{"USD":1.1782},"date":"2021-03-26"}
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="step_definitions.Get_ExchangeRates.<init>(Get_ExchangeRates.java:74)">
+                <span>Then API returns the response with status code as 200</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="step_definitions.Get_ExchangeRates.<init>(Get_ExchangeRates.java:88)">
+                <span>And Response should contain rate for "USD" against base "EUR"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="65"><span class="badge log pass-bg mr-2">Pass</span>Get all exchange rates for latest and future date</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="step_definitions.Get_ExchangeRates.<init>(Get_ExchangeRates.java:28)">
+                <span>Given Rates API for Foreign Exchange rates</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="step_definitions.Get_ExchangeRatesLatestAndFuture.<init>(Get_ExchangeRatesLatestAndFuture.java:24)">
+                <span>When I hit URL with latest and future dates</span>
+      <div> -->URL1:: https://api.ratesapi.io/api/latest
+      </div>
+      <div> -->Latest date response:: {"base":"EUR","rates":{"GBP":0.85503,"HKD":9.154,"IDR":16986.7,"ILS":3.9261,"DKK":7.4361,"INR":85.4845,"CHF":1.109,"MXN":24.2575,"CZK":26.081,"SGD":1.5865,"THB":36.654,"HRK":7.574,"MYR":4.8854,"NOK":10.1258,"CNY":7.7063,"BGN":1.9558,"PHP":57.132,"SEK":10.1905,"PLN":4.6493,"ZAR":17.6845,"CAD":1.4814,"ISK":149.8,"BRL":6.711,"RON":4.8878,"NZD":1.6863,"TRY":9.4523,"JPY":129.34,"RUB":89.5075,"KRW":1332.17,"USD":1.1782,"HUF":363.58,"AUD":1.5459},"date":"2021-03-26"}
+      </div>
+      <div> -->URL2:: https://api.ratesapi.io/api/2021-04-07
+      </div>
+      <div> -->future date response:: {"base":"EUR","rates":{"GBP":0.85503,"HKD":9.154,"IDR":16986.7,"ILS":3.9261,"DKK":7.4361,"INR":85.4845,"CHF":1.109,"MXN":24.2575,"CZK":26.081,"SGD":1.5865,"THB":36.654,"HRK":7.574,"MYR":4.8854,"NOK":10.1258,"CNY":7.7063,"BGN":1.9558,"PHP":57.132,"SEK":10.1905,"PLN":4.6493,"ZAR":17.6845,"CAD":1.4814,"ISK":149.8,"BRL":6.711,"RON":4.8878,"NZD":1.6863,"TRY":9.4523,"JPY":129.34,"RUB":89.5075,"KRW":1332.17,"USD":1.1782,"HUF":363.58,"AUD":1.5459},"date":"2021-03-26"}
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="step_definitions.Get_ExchangeRatesLatestAndFuture.<init>(Get_ExchangeRatesLatestAndFuture.java:37)">
+                <span>Then Both apis returns the response with status code as 200</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="step_definitions.Get_ExchangeRatesLatestAndFuture.<init>(Get_ExchangeRatesLatestAndFuture.java:42)">
+                <span>And validate future date rates matches current date</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="66"><span class="badge log pass-bg mr-2">Pass</span>Get all exchange rates against INR</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="step_definitions.Get_ExchangeRates.<init>(Get_ExchangeRates.java:28)">
+                <span>Given Rates API for Foreign Exchange rates</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="step_definitions.Get_ExchangeRates.<init>(Get_ExchangeRates.java:40)">
+                <span>When I hit URL with query parameter "base" as "INR" with date as "latest"</span>
+      <div> -->URL:: https://api.ratesapi.io/api/latest
+      </div>
+      <div> -->Query Parameters:: base=INR
+      </div>
+      <div> -->statusCode:: 200
+      </div>
+      <div> -->responseBody:: {"base":"INR","rates":{"GBP":0.0100021641,"HKD":0.1070837403,"IDR":198.7108774105,"ILS":0.0459276243,"DKK":0.0869876995,"INR":1.0,"CHF":0.0129731121,"MXN":0.2837648931,"CZK":0.3050962455,"SGD":0.01855892,"THB":0.4287794863,"HRK":0.0886008575,"EUR":0.0116980271,"MYR":0.0571495417,"NOK":0.1184518831,"CNY":0.0901485065,"BGN":0.0228790015,"PHP":0.6683316859,"PLN":0.0543876375,"ZAR":0.2068737607,"CAD":0.0173294574,"ISK":1.7523644637,"BRL":0.0785054601,"RON":0.057177617,"NZD":0.0197263831,"TRY":0.1105732618,"JPY":1.5130228287,"RUB":1.0470611631,"KRW":15.5837607987,"USD":0.0137826156,"AUD":0.0180839801,"HUF":4.2531687031,"SEK":0.1192087454},"date":"2021-03-26"}
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="step_definitions.Get_ExchangeRates.<init>(Get_ExchangeRates.java:74)">
+                <span>Then API returns the response with status code as 200</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="step_definitions.Get_ExchangeRates.<init>(Get_ExchangeRates.java:82)">
+                <span>And All exchange rates are returned against base "INR"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="82"><span class="badge log pass-bg mr-2">Pass</span>Get exchange rate for US against EUR</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="step_definitions.Get_ExchangeRates.<init>(Get_ExchangeRates.java:28)">
+                <span>Given Rates API for Foreign Exchange rates</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="step_definitions.Get_ExchangeRates.<init>(Get_ExchangeRates.java:40)">
+                <span>When I hit URL with query parameter "symbols" as "US" with date as "latest"</span>
+      <div> -->URL:: https://api.ratesapi.io/api/latest
+      </div>
+      <div> -->Query Parameters:: symbols=US
+      </div>
+      <div> -->statusCode:: 400
+      </div>
+      <div> -->responseBody:: {"error":"Symbols 'US' are invalid for date 2021-03-28."}
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="step_definitions.Get_ExchangeRates.<init>(Get_ExchangeRates.java:74)">
+                <span>Then API returns the response with status code as 400</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="84"><span class="badge log fail-bg mr-2">Fail</span>Validate Get all exchange rates with incorrect url</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="step_definitions.Get_ExchangeRates.<init>(Get_ExchangeRates.java:28)">
+                <span>Given Rates API for Foreign Exchange rates</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="step_definitions.Get_ExchangeRates.<init>(Get_ExchangeRates.java:64)">
+                <span>When I hit incorrect URL "https://api.ratesapi.io/api/" with date as ""</span>
+      <div> -->URL:: https://api.ratesapi.io/api/
+      </div>
+      <div>
+        <textarea disabled class="code-block">java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:75)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:476)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:218)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:200)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:162)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:394)
+	at java.net.Socket.connect(Socket.java:606)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:326)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:610)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:445)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.apache.http.client.HttpClient$execute$17.call(Unknown Source)
+	at io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder.doRequest(RequestSpecificationImpl.groovy:2055)
+	at io.restassured.internal.http.HTTPBuilder.doRequest(HTTPBuilder.java:495)
+	at io.restassured.internal.http.HTTPBuilder.request(HTTPBuilder.java:452)
+	at io.restassured.internal.http.HTTPBuilder$request$27.call(Unknown Source)
+	at io.restassured.internal.RequestSpecificationImpl.sendHttpRequest(RequestSpecificationImpl.groovy:1451)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1035)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:819)
+	at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)
+	at io.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1200)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1035)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:819)
+	at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:166)
+	at io.restassured.internal.filter.SendRequestFilter.filter(SendRequestFilter.groovy:30)
+	at io.restassured.filter.Filter$filter$9.call(Unknown Source)
+	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at io.restassured.filter.time.TimingFilter.filter(TimingFilter.java:56)
+	at io.restassured.filter.Filter$filter$3.call(Unknown Source)
+	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at io.restassured.filter.FilterContext$next$6.call(Unknown Source)
+	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1655)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1035)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:819)
+	at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
+	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1661)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1035)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:819)
+	at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
+	at io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy:171)
+	at io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy)
+	at step_definitions.Get_ExchangeRates.lambda$4(Get_ExchangeRates.java:69)
+	at ?.I hit incorrect URL "https://api.ratesapi.io/api/" with date as ""(classpath:features/ExchangesRates_LatestData.feature:42)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="step_definitions.Get_ExchangeRates.<init>(Get_ExchangeRates.java:74)">
+                <span>Then API returns the response with status code as 400</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="90"><span class="badge log pass-bg mr-2">Pass</span>Get exchange rate for BRL against INR</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="step_definitions.Get_ExchangeRates.<init>(Get_ExchangeRates.java:28)">
+                <span>Given Rates API for Foreign Exchange rates</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="step_definitions.Get_ExchangeRates.<init>(Get_ExchangeRates.java:49)">
+                <span>When I hit URL with query parameters "base" as "INR" and "symbols" as "BRL" with date as "latest"</span>
+      <div> -->URL:: https://api.ratesapi.io/api/latest
+      </div>
+      <div> -->Query Parameters:: base=INR,symbols=symbols
+      </div>
+      <div> -->statusCode:: 200
+      </div>
+      <div> -->responseBody:: {"base":"INR","rates":{"BRL":0.0785054601},"date":"2021-03-26"}
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="step_definitions.Get_ExchangeRates.<init>(Get_ExchangeRates.java:74)">
+                <span>Then API returns the response with status code as 200</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="step_definitions.Get_ExchangeRates.<init>(Get_ExchangeRates.java:88)">
+                <span>And Response should contain rate for "BRL" against base "INR"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="92"><span class="badge log pass-bg mr-2">Pass</span>Get all exchange rates against TYT</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="step_definitions.Get_ExchangeRates.<init>(Get_ExchangeRates.java:28)">
+                <span>Given Rates API for Foreign Exchange rates</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="step_definitions.Get_ExchangeRates.<init>(Get_ExchangeRates.java:40)">
+                <span>When I hit URL with query parameter "base" as "TYT" with date as "latest"</span>
+      <div> -->URL:: https://api.ratesapi.io/api/latest
+      </div>
+      <div> -->Query Parameters:: base=TYT
+      </div>
+      <div> -->statusCode:: 400
+      </div>
+      <div> -->responseBody:: {"error":"Base 'TYT' is not supported."}
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="step_definitions.Get_ExchangeRates.<init>(Get_ExchangeRates.java:74)">
+                <span>Then API returns the response with status code as 400</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="96"><span class="badge log pass-bg mr-2">Pass</span>Get exchange rate for 123 against USD</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="step_definitions.Get_ExchangeRates.<init>(Get_ExchangeRates.java:28)">
+                <span>Given Rates API for Foreign Exchange rates</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="step_definitions.Get_ExchangeRates.<init>(Get_ExchangeRates.java:49)">
+                <span>When I hit URL with query parameters "base" as "USD" and "symbols" as "123" with date as "latest"</span>
+      <div> -->URL:: https://api.ratesapi.io/api/latest
+      </div>
+      <div> -->Query Parameters:: base=USD,symbols=symbols
+      </div>
+      <div> -->statusCode:: 400
+      </div>
+      <div> -->responseBody:: {"error":"Symbols '123' are invalid for date 2021-03-28."}
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="step_definitions.Get_ExchangeRates.<init>(Get_ExchangeRates.java:74)">
+                <span>Then API returns the response with status code as 400</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">4</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>11</span>
+</span>
+<p class="name">@positive</p>
+<p class="duration text-sm">11 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@positive</h4>
+<span status="pass" class='badge log pass-bg'>11 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:04:05 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='3'>Get all exchange rates for saturday with date "2021-03-20"</a>
+<div class="">
+<span class="badge badge-default">Foreign exchange rates with currency conversion for past data.Get all exchange rates for saturday with date "2021-03-20"</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:04:05 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='5'>Get all exchange rates for sunday with date "2021-03-21"</a>
+<div class="">
+<span class="badge badge-default">Foreign exchange rates with currency conversion for past data.Get all exchange rates for sunday with date "2021-03-21"</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:04:05 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='8'>Get exchange rate for USD against EUR for "2021-03-23"</a>
+<div class="">
+<span class="badge badge-default">Foreign exchange rates with currency conversion for past data.Get exchange rate for USD against EUR for "2021-03-23"</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:04:05 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='9'>Get all exchange rates against CNY for "2021-03-23"</a>
+<div class="">
+<span class="badge badge-default">Foreign exchange rates with currency conversion for past data.Get all exchange rates against CNY for "2021-03-23"</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:04:05 AM</td>
+<td>
+<a href="#" class="linked" test-id='10' id='11'>Get all exchange rates for latest date</a>
+<div class="">
+<span class="badge badge-default">Foreign exchange rates with currency conversion for latest data.Get all exchange rates for latest date</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:04:05 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='12'>Get exchange rate for GBP against USD for "2021-03-23"</a>
+<div class="">
+<span class="badge badge-default">Foreign exchange rates with currency conversion for past data.Get exchange rate for GBP against USD for "2021-03-23"</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:04:05 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='14'>Get all exchange rates for "2021-03-22"</a>
+<div class="">
+<span class="badge badge-default">Foreign exchange rates with currency conversion for past data.Get all exchange rates for "2021-03-22"</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:04:10 AM</td>
+<td>
+<a href="#" class="linked" test-id='10' id='63'>Get exchange rate for USD against EUR</a>
+<div class="">
+<span class="badge badge-default">Foreign exchange rates with currency conversion for latest data.Get exchange rate for USD against EUR</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:04:10 AM</td>
+<td>
+<a href="#" class="linked" test-id='10' id='65'>Get all exchange rates for latest and future date</a>
+<div class="">
+<span class="badge badge-default">Foreign exchange rates with currency conversion for latest data.Get all exchange rates for latest and future date</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:04:10 AM</td>
+<td>
+<a href="#" class="linked" test-id='10' id='66'>Get all exchange rates against INR</a>
+<div class="">
+<span class="badge badge-default">Foreign exchange rates with currency conversion for latest data.Get all exchange rates against INR</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:04:10 AM</td>
+<td>
+<a href="#" class="linked" test-id='10' id='90'>Get exchange rate for BRL against INR</a>
+<div class="">
+<span class="badge badge-default">Foreign exchange rates with currency conversion for latest data.Get exchange rate for BRL against INR</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>6</span>
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@negative</p>
+<p class="duration text-sm">7 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@negative</h4>
+<span status="pass" class='badge log pass-bg'>6 passed</span>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:04:05 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>Get exchange rate for PPP against USD for "2021-03-23"</a>
+<div class="">
+<span class="badge badge-default">Foreign exchange rates with currency conversion for past data.Get exchange rate for PPP against USD for "2021-03-23"</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:04:05 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='4'>Get all exchange rates against ZXZ for "2021-03-23"</a>
+<div class="">
+<span class="badge badge-default">Foreign exchange rates with currency conversion for past data.Get all exchange rates against ZXZ for "2021-03-23"</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:04:05 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='7'>Get exchange rate for SSS against EUR for "2021-03-23"</a>
+<div class="">
+<span class="badge badge-default">Foreign exchange rates with currency conversion for past data.Get exchange rate for SSS against EUR for "2021-03-23"</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:04:10 AM</td>
+<td>
+<a href="#" class="linked" test-id='10' id='82'>Get exchange rate for US against EUR</a>
+<div class="">
+<span class="badge badge-default">Foreign exchange rates with currency conversion for latest data.Get exchange rate for US against EUR</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>08:04:10 AM</td>
+<td>
+<a href="#" class="linked" test-id='10' id='84'>Validate Get all exchange rates with incorrect url</a>
+<div class="">
+<span class="badge badge-default">Foreign exchange rates with currency conversion for latest data.Validate Get all exchange rates with incorrect url</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:04:10 AM</td>
+<td>
+<a href="#" class="linked" test-id='10' id='92'>Get all exchange rates against TYT</a>
+<div class="">
+<span class="badge badge-default">Foreign exchange rates with currency conversion for latest data.Get all exchange rates against TYT</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:04:10 AM</td>
+<td>
+<a href="#" class="linked" test-id='10' id='96'>Get exchange rate for 123 against USD</a>
+<div class="">
+<span class="badge badge-default">Foreign exchange rates with currency conversion for latest data.Get exchange rate for 123 against USD</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>17</span>
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@regression</p>
+<p class="duration text-sm">18 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@regression</h4>
+<span status="pass" class='badge log pass-bg'>17 passed</span>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:04:05 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>Get exchange rate for PPP against USD for "2021-03-23"</a>
+<div class="">
+<span class="badge badge-default">Foreign exchange rates with currency conversion for past data.Get exchange rate for PPP against USD for "2021-03-23"</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:04:05 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='3'>Get all exchange rates for saturday with date "2021-03-20"</a>
+<div class="">
+<span class="badge badge-default">Foreign exchange rates with currency conversion for past data.Get all exchange rates for saturday with date "2021-03-20"</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:04:05 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='4'>Get all exchange rates against ZXZ for "2021-03-23"</a>
+<div class="">
+<span class="badge badge-default">Foreign exchange rates with currency conversion for past data.Get all exchange rates against ZXZ for "2021-03-23"</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:04:05 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='5'>Get all exchange rates for sunday with date "2021-03-21"</a>
+<div class="">
+<span class="badge badge-default">Foreign exchange rates with currency conversion for past data.Get all exchange rates for sunday with date "2021-03-21"</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:04:05 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='7'>Get exchange rate for SSS against EUR for "2021-03-23"</a>
+<div class="">
+<span class="badge badge-default">Foreign exchange rates with currency conversion for past data.Get exchange rate for SSS against EUR for "2021-03-23"</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:04:05 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='8'>Get exchange rate for USD against EUR for "2021-03-23"</a>
+<div class="">
+<span class="badge badge-default">Foreign exchange rates with currency conversion for past data.Get exchange rate for USD against EUR for "2021-03-23"</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:04:05 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='9'>Get all exchange rates against CNY for "2021-03-23"</a>
+<div class="">
+<span class="badge badge-default">Foreign exchange rates with currency conversion for past data.Get all exchange rates against CNY for "2021-03-23"</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:04:05 AM</td>
+<td>
+<a href="#" class="linked" test-id='10' id='11'>Get all exchange rates for latest date</a>
+<div class="">
+<span class="badge badge-default">Foreign exchange rates with currency conversion for latest data.Get all exchange rates for latest date</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:04:05 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='12'>Get exchange rate for GBP against USD for "2021-03-23"</a>
+<div class="">
+<span class="badge badge-default">Foreign exchange rates with currency conversion for past data.Get exchange rate for GBP against USD for "2021-03-23"</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:04:05 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='14'>Get all exchange rates for "2021-03-22"</a>
+<div class="">
+<span class="badge badge-default">Foreign exchange rates with currency conversion for past data.Get all exchange rates for "2021-03-22"</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:04:10 AM</td>
+<td>
+<a href="#" class="linked" test-id='10' id='63'>Get exchange rate for USD against EUR</a>
+<div class="">
+<span class="badge badge-default">Foreign exchange rates with currency conversion for latest data.Get exchange rate for USD against EUR</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:04:10 AM</td>
+<td>
+<a href="#" class="linked" test-id='10' id='65'>Get all exchange rates for latest and future date</a>
+<div class="">
+<span class="badge badge-default">Foreign exchange rates with currency conversion for latest data.Get all exchange rates for latest and future date</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:04:10 AM</td>
+<td>
+<a href="#" class="linked" test-id='10' id='66'>Get all exchange rates against INR</a>
+<div class="">
+<span class="badge badge-default">Foreign exchange rates with currency conversion for latest data.Get all exchange rates against INR</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:04:10 AM</td>
+<td>
+<a href="#" class="linked" test-id='10' id='82'>Get exchange rate for US against EUR</a>
+<div class="">
+<span class="badge badge-default">Foreign exchange rates with currency conversion for latest data.Get exchange rate for US against EUR</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>08:04:10 AM</td>
+<td>
+<a href="#" class="linked" test-id='10' id='84'>Validate Get all exchange rates with incorrect url</a>
+<div class="">
+<span class="badge badge-default">Foreign exchange rates with currency conversion for latest data.Validate Get all exchange rates with incorrect url</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:04:10 AM</td>
+<td>
+<a href="#" class="linked" test-id='10' id='90'>Get exchange rate for BRL against INR</a>
+<div class="">
+<span class="badge badge-default">Foreign exchange rates with currency conversion for latest data.Get exchange rate for BRL against INR</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:04:10 AM</td>
+<td>
+<a href="#" class="linked" test-id='10' id='92'>Get all exchange rates against TYT</a>
+<div class="">
+<span class="badge badge-default">Foreign exchange rates with currency conversion for latest data.Get all exchange rates against TYT</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:04:10 AM</td>
+<td>
+<a href="#" class="linked" test-id='10' id='96'>Get exchange rate for 123 against USD</a>
+<div class="">
+<span class="badge badge-default">Foreign exchange rates with currency conversion for latest data.Get exchange rate for 123 against USD</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+</span>
+<p class="name">@sanity</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@sanity</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:04:05 AM</td>
+<td>
+<a href="#" class="linked" test-id='10' id='11'>Get all exchange rates for latest date</a>
+<div class="">
+<span class="badge badge-default">Foreign exchange rates with currency conversion for latest data.Get all exchange rates for latest date</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:04:05 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='14'>Get all exchange rates for "2021-03-22"</a>
+<div class="">
+<span class="badge badge-default">Foreign exchange rates with currency conversion for past data.Get all exchange rates for "2021-03-22"</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">java.net.ConnectException</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>java.net.ConnectException</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>08:04:10 AM</td>
+<td>
+<a href="#" class="linked" test-id='10' id='89'>When I hit incorrect URL "https://api.ratesapi.io/api/" with date as ""</a>
+<div class="">
+<span class="badge badge-default">Foreign exchange rates with currency conversion for latest data.Validate Get all exchange rates with incorrect url.When I hit incorrect URL "https://api.ratesapi.io/api/" with date as ""</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@14e9bb345ef7e2ed3a102f271d84e9f0267c88e7/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>
