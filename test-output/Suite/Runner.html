@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>17/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Mar 28 08:04:04 IST 2021</td>
+<td>Started on:</td><td>Sun Mar 28 08:47:55 IST 2021</td>
 </tr>
-<tr><td>Total time:</td><td>13 seconds (13253 ms)</td>
+<tr><td>Total time:</td><td>12 seconds (12500 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -93,11 +93,11 @@ function toggleAllBoxes() {
 	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
-	at org.apache.http.client.HttpClient$execute$17.call(Unknown Source)
+	at org.apache.http.client.HttpClient$execute$9.call(Unknown Source)
 	at io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder.doRequest(RequestSpecificationImpl.groovy:2055)
 	at io.restassured.internal.http.HTTPBuilder.doRequest(HTTPBuilder.java:495)
 	at io.restassured.internal.http.HTTPBuilder.request(HTTPBuilder.java:452)
-	at io.restassured.internal.http.HTTPBuilder$request$27.call(Unknown Source)
+	at io.restassured.internal.http.HTTPBuilder$request$33.call(Unknown Source)
 	at io.restassured.internal.RequestSpecificationImpl.sendHttpRequest(RequestSpecificationImpl.groovy:1451)
 	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
 	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
@@ -115,12 +115,16 @@ function toggleAllBoxes() {
 	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:166)
 	at io.restassured.internal.filter.SendRequestFilter.filter(SendRequestFilter.groovy:30)
-	at io.restassured.filter.Filter$filter$9.call(Unknown Source)
+	at io.restassured.filter.Filter$filter$7.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at io.restassured.filter.Filter$filter$3.call(Unknown Source)
 	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
 	at io.restassured.filter.time.TimingFilter.filter(TimingFilter.java:56)
 	at io.restassured.filter.Filter$filter$3.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at io.restassured.filter.Filter$filter$7.call(Unknown Source)
 	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
-	at io.restassured.filter.FilterContext$next$6.call(Unknown Source)
+	at io.restassured.filter.FilterContext$next$2.call(Unknown Source)
 	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1655)
 	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
 	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
@@ -143,8 +147,8 @@ function toggleAllBoxes() {
 	at io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy)
 	at step_definitions.Get_ExchangeRates.lambda$4(Get_ExchangeRates.java:69)
 	at ?.I hit incorrect URL &quot;https://api.ratesapi.io/api/&quot; with date as &quot;&quot;(classpath:features/ExchangesRates_LatestData.feature:42)
-... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace597195582", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace597195582'><pre>java.net.ConnectException: Connection refused: connect
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace415643837", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace415643837'><pre>java.net.ConnectException: Connection refused: connect
 	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
 	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:75)
 	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:476)
@@ -161,11 +165,11 @@ function toggleAllBoxes() {
 	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
-	at org.apache.http.client.HttpClient$execute$17.call(Unknown Source)
+	at org.apache.http.client.HttpClient$execute$9.call(Unknown Source)
 	at io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder.doRequest(RequestSpecificationImpl.groovy:2055)
 	at io.restassured.internal.http.HTTPBuilder.doRequest(HTTPBuilder.java:495)
 	at io.restassured.internal.http.HTTPBuilder.request(HTTPBuilder.java:452)
-	at io.restassured.internal.http.HTTPBuilder$request$27.call(Unknown Source)
+	at io.restassured.internal.http.HTTPBuilder$request$33.call(Unknown Source)
 	at io.restassured.internal.RequestSpecificationImpl.sendHttpRequest(RequestSpecificationImpl.groovy:1451)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -193,12 +197,16 @@ function toggleAllBoxes() {
 	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:166)
 	at io.restassured.internal.filter.SendRequestFilter.filter(SendRequestFilter.groovy:30)
-	at io.restassured.filter.Filter$filter$9.call(Unknown Source)
+	at io.restassured.filter.Filter$filter$7.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at io.restassured.filter.Filter$filter$3.call(Unknown Source)
 	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
 	at io.restassured.filter.time.TimingFilter.filter(TimingFilter.java:56)
 	at io.restassured.filter.Filter$filter$3.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at io.restassured.filter.Filter$filter$7.call(Unknown Source)
 	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
-	at io.restassured.filter.FilterContext$next$6.call(Unknown Source)
+	at io.restassured.filter.FilterContext$next$2.call(Unknown Source)
 	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1655)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -245,52 +253,57 @@ function toggleAllBoxes() {
 <tr>
 <td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Get all exchange rates against ZXZ for "2021-03-23"", "Optional[Foreign exchange rates with currency conversion for past data]"</td>
 <td></td>
-<td>5</td>
-<td>runner.TestRunner@58c1670b</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Get exchange rate for PPP against USD for "2021-03-23"", "Optional[Foreign exchange rates with currency conversion for past data]"</td>
-<td></td>
-<td>5</td>
+<td>4</td>
 <td>runner.TestRunner@58c1670b</td></tr>
 <tr>
 <td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Get exchange rate for SSS against EUR for "2021-03-23"", "Optional[Foreign exchange rates with currency conversion for past data]"</td>
 <td></td>
-<td>5</td>
+<td>4</td>
 <td>runner.TestRunner@58c1670b</td></tr>
 <tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Get all exchange rates against CNY for "2021-03-23"", "Optional[Foreign exchange rates with currency conversion for past data]"</td>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Get exchange rate for PPP against USD for "2021-03-23"", "Optional[Foreign exchange rates with currency conversion for past data]"</td>
 <td></td>
-<td>5</td>
-<td>runner.TestRunner@58c1670b</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Get all exchange rates for "2021-03-22"", "Optional[Foreign exchange rates with currency conversion for past data]"</td>
-<td></td>
-<td>5</td>
-<td>runner.TestRunner@58c1670b</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Get all exchange rates for saturday with date "2021-03-20"", "Optional[Foreign exchange rates with currency conversion for past data]"</td>
-<td></td>
-<td>5</td>
-<td>runner.TestRunner@58c1670b</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Get all exchange rates for latest date", "Optional[Foreign exchange rates with currency conversion for latest data]"</td>
-<td></td>
-<td>5</td>
+<td>4</td>
 <td>runner.TestRunner@58c1670b</td></tr>
 <tr>
 <td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Get exchange rate for GBP against USD for "2021-03-23"", "Optional[Foreign exchange rates with currency conversion for past data]"</td>
 <td></td>
-<td>5</td>
+<td>4</td>
+<td>runner.TestRunner@58c1670b</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Get all exchange rates for latest date", "Optional[Foreign exchange rates with currency conversion for latest data]"</td>
+<td></td>
+<td>4</td>
 <td>runner.TestRunner@58c1670b</td></tr>
 <tr>
 <td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Get all exchange rates for sunday with date "2021-03-21"", "Optional[Foreign exchange rates with currency conversion for past data]"</td>
 <td></td>
-<td>5</td>
+<td>4</td>
+<td>runner.TestRunner@58c1670b</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Get all exchange rates for saturday with date "2021-03-20"", "Optional[Foreign exchange rates with currency conversion for past data]"</td>
+<td></td>
+<td>4</td>
 <td>runner.TestRunner@58c1670b</td></tr>
 <tr>
 <td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Get exchange rate for USD against EUR for "2021-03-23"", "Optional[Foreign exchange rates with currency conversion for past data]"</td>
 <td></td>
-<td>5</td>
+<td>4</td>
+<td>runner.TestRunner@58c1670b</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Get all exchange rates against CNY for "2021-03-23"", "Optional[Foreign exchange rates with currency conversion for past data]"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58c1670b</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Get all exchange rates for "2021-03-22"", "Optional[Foreign exchange rates with currency conversion for past data]"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@58c1670b</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Get exchange rate for USD against EUR", "Optional[Foreign exchange rates with currency conversion for latest data]"</td>
+<td></td>
+<td>0</td>
 <td>runner.TestRunner@58c1670b</td></tr>
 <tr>
 <td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Get all exchange rates against INR", "Optional[Foreign exchange rates with currency conversion for latest data]"</td>
@@ -298,7 +311,7 @@ function toggleAllBoxes() {
 <td>0</td>
 <td>runner.TestRunner@58c1670b</td></tr>
 <tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Get exchange rate for USD against EUR", "Optional[Foreign exchange rates with currency conversion for latest data]"</td>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Get exchange rate for BRL against INR", "Optional[Foreign exchange rates with currency conversion for latest data]"</td>
 <td></td>
 <td>0</td>
 <td>runner.TestRunner@58c1670b</td></tr>
@@ -314,11 +327,6 @@ function toggleAllBoxes() {
 <td>runner.TestRunner@58c1670b</td></tr>
 <tr>
 <td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Get all exchange rates against TYT", "Optional[Foreign exchange rates with currency conversion for latest data]"</td>
-<td></td>
-<td>0</td>
-<td>runner.TestRunner@58c1670b</td></tr>
-<tr>
-<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Get exchange rate for BRL against INR", "Optional[Foreign exchange rates with currency conversion for latest data]"</td>
 <td></td>
 <td>0</td>
 <td>runner.TestRunner@58c1670b</td></tr>
